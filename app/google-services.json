@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "521959582032",
+    "firebase_url": "https://tracker-97afc.firebaseio.com",
+    "project_id": "tracker-97afc",
+    "storage_bucket": "tracker-97afc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521959582032:android:f5d37adac648ccdd",
+        "android_client_info": {
+          "package_name": "com.example.kaiso.tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521959582032-j4giqrl93mm1upn1ogjlvsepciqjloid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwa8CmBTrriFJLCVy1d-A-JSvWfIO3uOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521959582032-j4giqrl93mm1upn1ogjlvsepciqjloid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521959582032:android:13c3c6a65bcbec53",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521959582032-j4giqrl93mm1upn1ogjlvsepciqjloid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwa8CmBTrriFJLCVy1d-A-JSvWfIO3uOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521959582032-j4giqrl93mm1upn1ogjlvsepciqjloid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521959582032:android:3772fab77245a8e6",
+        "android_client_info": {
+          "package_name": "org.turntotech.samplewidget"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521959582032-j4giqrl93mm1upn1ogjlvsepciqjloid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwa8CmBTrriFJLCVy1d-A-JSvWfIO3uOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521959582032-j4giqrl93mm1upn1ogjlvsepciqjloid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
