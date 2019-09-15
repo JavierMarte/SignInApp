@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     EditText studentid;
     EditText cellphone;
     EditText schoolemail;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         Firebase.setAndroidContext(this);
 
         Firebase myFirebaseRef = new Firebase("https://signinapp-50107.firebaseio.com/");
-        //https://churchacunit.firebaseio.com/
+
 
         name = (EditText) findViewById(R.id.editname);
         studentid = (EditText) findViewById(R.id.editstudentid);
@@ -51,10 +52,6 @@ public class MainActivity extends AppCompatActivity {
         myFirebaseRef.child(name.getText().toString()).child("studentID").setValue(studentid.getText().toString());
         myFirebaseRef.child(name.getText().toString()).child("cellphone").setValue(cellphone.getText().toString());
         myFirebaseRef.child(name.getText().toString()).child("schoolemail").setValue(schoolemail.getText().toString());
-
-
-
-
 
 
         }
