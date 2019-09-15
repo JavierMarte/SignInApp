@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         Firebase.setAndroidContext(this);
 
-        Firebase myFirebaseRef = new Firebase("https://tracker-97afc.firebaseio.com/");
+        Firebase myFirebaseRef = new Firebase("https://signinapp-50107.firebaseio.com/");
         //https://churchacunit.firebaseio.com/
 
         name = (EditText) findViewById(R.id.editname);
