@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/background"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -14,7 +13,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
-        android:background="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,47 +20,22 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign IN"
+            android:text="Main"
             android:textSize="36sp" />
-
-        <EditText
-            android:id="@+id/editname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="100"
-            android:hint="Name"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editstudentid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Student ID"
-            android:inputType="phone" />
-
-        <EditText
-            android:id="@+id/editschoolemail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="School Email"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editcellphone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Cell Phone Number"
-            android:inputType="phone" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="enter"
-            android:text="Enter" />
+            android:text="new" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="enter"
+            android:text="existing user" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
