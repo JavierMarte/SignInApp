@@ -33,14 +33,14 @@ public class mainoption extends AppCompatActivity {
 
     public void newuser(View view) {
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, login.class);
 
         startActivity(intent);
 
     }
     public void existing(View view) {
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, login.class);
 
         startActivity(intent);
 
