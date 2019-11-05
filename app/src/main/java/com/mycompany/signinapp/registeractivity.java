@@ -9,7 +9,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class login extends AppCompatActivity {
+public class registeractivity extends AppCompatActivity {
 
  
     EditText username;
@@ -20,7 +20,7 @@ public class login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.register);
     }
 
 
@@ -34,23 +34,19 @@ public class login extends AppCompatActivity {
 //        Firebase myFirebaseRef = new Firebase("https://signinapp-50107.firebaseio.com/");
 //
 //
-        password = (EditText) findViewById(R.id.editText8);
+        password = (EditText) findViewById(R.id.editText12);
         username = (EditText) findViewById(R.id.editText12);
        // cellphone = (EditText) findViewById(R.id.editcellphone);
        // schoolemail = (EditText) findViewById(R.id.editschoolemail);
 
         System.out.println(password.getText().toString());
-
-       // String passwordstr = password.getText().toString();
         if(password.getText().length() == 0 || username.getText().length() == 0){
 
             Toast.makeText(getApplicationContext(),"error!!", Toast.LENGTH_SHORT).show();
         }else{
-
             Toast.makeText(getApplicationContext(),password.getText(), Toast.LENGTH_SHORT).show();
-                if(password.getText().toString().equals("1")){
 
-                    System.out.println("in here");
+                if(password.equals("1")){
                     Intent i = new Intent(this, MainActivity.class);
                     startActivity(i);
 

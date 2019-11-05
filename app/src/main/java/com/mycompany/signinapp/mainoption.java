@@ -33,7 +33,7 @@ public class mainoption extends AppCompatActivity {
 
     public void newuser(View view) {
 
-        Intent intent = new Intent(this, login.class);
+        Intent intent = new Intent(this, registeractivity.class);
 
         startActivity(intent);
 

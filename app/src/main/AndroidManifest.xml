@@ -24,6 +24,11 @@
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name="com.mycompany.signinapp.registeractivity">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.mycompany.signinapp.splashactivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
