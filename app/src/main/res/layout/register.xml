@@ -35,26 +35,32 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="292dp"
         android:text="club name"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="291dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="256dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="275dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="412dp"
         android:text="request approval"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="387dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

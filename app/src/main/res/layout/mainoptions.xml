@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/background2"
     tools:context=".mainoption">
 
     <TextView
@@ -11,8 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="172dp"
-        android:layout_marginBottom="516dp"
+        android:layout_marginBottom="520dp"
         android:text="Main"
+        android:textColor="#2196F3"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -32,8 +34,8 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="396dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="340dp"
         android:onClick="existing"
         android:text="existing user"
         app:layout_constraintBottom_toBottomOf="parent"
