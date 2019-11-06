@@ -1,7 +1,9 @@
 package com.mycompany.signinapp;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.VideoView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -32,6 +34,22 @@ public class splashactivity extends AppCompatActivity {
 
     }
 
+    public void entertomain(View view) {
 
+        Intent intent = new Intent(this, mainoption.class);
+        //EditText editText = (EditText) findViewById(R.id.editText);
+        // String message = editText.getText().toString();
+        // intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
 
+    }
+
+    public void entertomain2(View view) {
+
+        Intent intent = new Intent(this, mainoption.class);
+        //EditText editText = (EditText) findViewById(R.id.editText);
+        // String message = editText.getText().toString();
+        // intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
 }

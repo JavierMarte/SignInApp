@@ -30,7 +30,7 @@ public class splashactivity2 extends AppCompatActivity {
 //        videoview.start();
 
     }
-    public void entertomain(View view) {
+    public void entertomain2(View view) {
 
         Intent intent = new Intent(this, mainoption.class);
         //EditText editText = (EditText) findViewById(R.id.editText);
