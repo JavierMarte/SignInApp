@@ -1,6 +1,7 @@
 package com.mycompany.signinapp;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -23,15 +24,37 @@ public class splashactivity extends AppCompatActivity {
 
 
         videoview.setVideoURI(uri);
-        videoview.start();
-        //DisplayMetrics metrics = new DisplayMetrics();
-        //getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        //videoview.setLayoutParams(new LinearLayout.LayoutParams(metrics.widthPixels, metrics.heightPixels));
-//        videoview.getLayoutParams().width = 1700;
-//        videoview.getLayoutParams().height = 4000;
-//        videoview.setVideoURI(uri);
-//        videoview.start();
 
+        videoview.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setLooping(true);
+            }
+        });
+
+        videoview.start();
+
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        // put your code here...
+
+        VideoView videoview = (VideoView) findViewById(R.id.videoView);
+        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.backgroundvideo);
+
+
+        videoview.setVideoURI(uri);
+
+        videoview.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setLooping(true);
+            }
+        });
+
+        videoview.start();
     }
 
     public void entertomain(View view) {
