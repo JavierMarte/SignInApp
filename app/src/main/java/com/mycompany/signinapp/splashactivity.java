@@ -19,13 +19,16 @@ public class splashactivity extends AppCompatActivity {
         VideoView videoview = (VideoView) findViewById(R.id.videoView);
         Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.backgroundvideo);
 
+
+        videoview.setVideoURI(uri);
+        videoview.start();
         //DisplayMetrics metrics = new DisplayMetrics();
         //getWindowManager().getDefaultDisplay().getMetrics(metrics);
         //videoview.setLayoutParams(new LinearLayout.LayoutParams(metrics.widthPixels, metrics.heightPixels));
-        videoview.getLayoutParams().width = 1700;
-        videoview.getLayoutParams().height = 4000;
-        videoview.setVideoURI(uri);
-        videoview.start();
+//        videoview.getLayoutParams().width = 1700;
+//        videoview.getLayoutParams().height = 4000;
+//        videoview.setVideoURI(uri);
+//        videoview.start();
 
     }
 
