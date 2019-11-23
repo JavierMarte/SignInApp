@@ -33,7 +33,7 @@ public class mainoption extends AppCompatActivity {
 
     public void newuser(View view) {
 
-        Intent intent = new Intent(this, registeractivity.class);
+        Intent intent = new Intent(this, clubapproval.class);
 
         startActivity(intent);
 
