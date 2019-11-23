@@ -31,13 +31,13 @@ public class clubapproval extends AppCompatActivity {
         Firebase.setAndroidContext(this);
 
         Firebase myFirebaseRef = new Firebase("https://signinapp-50107.firebaseio.com/");
-//System.out.println("hey");
+
 
         clubname = (EditText) findViewById(R.id.editText);
         ownername = (EditText) findViewById(R.id.editText2);
         id = (EditText) findViewById(R.id.editTextname);
         schoolemail = (EditText) findViewById(R.id.editTextID);
-        //myFirebaseRef.child("clubapproval").setValue("hey");
+
 
 
         if ((clubname.getText().length() == 0 || schoolemail.getText().length() == 0) || (schoolemail.getText().length() == 0 || schoolemail.getText().length() == 0)) {
