@@ -55,14 +55,17 @@ public class splashactivity extends AppCompatActivity {
         });
 
         videoview.start();
+
     }
 
     public void entertomain(View view) {
 
         Intent intent = new Intent(this, mainoption.class);
+
         //EditText editText = (EditText) findViewById(R.id.editText);
         // String message = editText.getText().toString();
         // intent.putExtra(EXTRA_MESSAGE, message);
+
         startActivity(intent);
 
     }
@@ -70,9 +73,12 @@ public class splashactivity extends AppCompatActivity {
     public void entertomain2(View view) {
 
         Intent intent = new Intent(this, mainoption.class);
+
         //EditText editText = (EditText) findViewById(R.id.editText);
-        // String message = editText.getText().toString();
-        // intent.putExtra(EXTRA_MESSAGE, message);
+        //String message = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE, message);
+
+
         startActivity(intent);
     }
 }
