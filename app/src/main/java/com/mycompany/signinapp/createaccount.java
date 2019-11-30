@@ -36,7 +36,7 @@ public class createaccount extends AppCompatActivity {
         Firebase myFirebaseRef = new Firebase("https://signinapp-50107.firebaseio.com/");
 
 
-
+//check usernames before finalzing to ensure no repeat users
         myFirebaseRef.child("usernames").child(username.getText().toString()).child("club").setValue("computer science club");
         myFirebaseRef.child("usernames").child(username.getText().toString()).child("email").setValue(schoolemail.getText().toString());
 //pull name from prev intent or ask user
