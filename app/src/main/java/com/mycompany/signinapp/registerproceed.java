@@ -23,30 +23,44 @@ public class registerproceed extends AppCompatActivity {
 
     }
 
-
+    EditText password;
     public void onetime(View view) {
+
+
+        password = (EditText) findViewById(R.id.editText);
 
         Firebase.setAndroidContext(this);
 
         Firebase myFirebaseRef = new Firebase("https://signinapp-50107.firebaseio.com/");
 
 
-        System.out.println("hello");
-        //addListenerForSingleValueEvent()
-        //myFirebaseRef.child("OneTimeCodes").child(clubname.getText().toString()).child("owner name").setValue(ownername.getText().toString());
 
-        //Firebase ref =  myFirebaseRef.child("OneTimeCodes").child("12304").getRef();
-
-       // System.out.println(val);
-
+        String val = "true";
 
         myFirebaseRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                System.out.println(dataSnapshot.getValue());
+
+                System.out.println(dataSnapshot.child("OneTimeCodes").child("12304").getValue());
+                System.out.println("[" + dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue() + "]");
+                System.out.println("[" + dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue() + "]");
+                System.out.println((dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue()).toString().equals("true"));
+
+                if((dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue()).toString().equals("true")){
+
+                    System.out.println("in here");
+                    //go to anal and signin
+                    //if exec status go to anal and signin
+                   // Intent i = new Intent(this, analytics_signin.class);
+                    //startActivity(i);
+
+                    Toast.makeText(getApplicationContext(),"succesful!!!", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(registerproceed.this, createaccount.class);
+                    startActivity(i);
 
 
-                Toast.makeText(getApplicationContext(),"uploaded to server!!", Toast.LENGTH_SHORT).show();
+                }
+
 
 
             }
