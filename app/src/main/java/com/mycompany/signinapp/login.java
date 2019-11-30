@@ -51,9 +51,17 @@ public class login extends AppCompatActivity {
                 if(password.getText().toString().equals("1")){
 
                     System.out.println("in here");
-                    Intent i = new Intent(this, MainActivity.class);
+                    //go to anal and signin
+                    //if exec status go to anal and signin
+                    Intent i = new Intent(this, analytics_signin.class);
                     startActivity(i);
 
+                }
+
+                if(false){
+
+
+                    //if member go to qr code
                 }
 
 

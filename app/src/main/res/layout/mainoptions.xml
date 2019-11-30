@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/background2"
+    android:background="@mipmap/backgroundcolors"
     tools:context=".mainoption">
 
     <TextView
@@ -12,11 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="172dp"
-        android:layout_marginBottom="520dp"
+        android:layout_marginBottom="108dp"
         android:text="Main"
         android:textColor="#2196F3"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="164dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginBottom="288dp"
         android:onClick="newuser"
         android:text="new"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,10 +35,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="144dp"
-        android:layout_marginBottom="340dp"
+        android:layout_marginBottom="52dp"
         android:onClick="existing"
         android:text="existing user"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
     <LinearLayout
