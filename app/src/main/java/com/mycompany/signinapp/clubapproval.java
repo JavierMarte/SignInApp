@@ -46,7 +46,7 @@ public class clubapproval extends AppCompatActivity {
         } else {
 
 
-            myFirebaseRef.child("clubapproval").child(clubname.getText().toString()).child("owner").setValue(ownername.getText().toString());
+            myFirebaseRef.child("clubapproval").child(clubname.getText().toString()).child("owner name").setValue(ownername.getText().toString());
             myFirebaseRef.child("clubapproval").child(clubname.getText().toString()).child("studentid").setValue(id.getText().toString());
             myFirebaseRef.child("clubapproval").child(clubname.getText().toString()).child("schoolemail").setValue(schoolemail.getText().toString());
 
