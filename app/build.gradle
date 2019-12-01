@@ -6,8 +6,8 @@ android {
         applicationId "com.mycompany.signinapp"
         minSdkVersion 24
         targetSdkVersion 28
-        versionCode 10
-        versionName "2.1"
+        versionCode 11
+        versionName "2.11"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

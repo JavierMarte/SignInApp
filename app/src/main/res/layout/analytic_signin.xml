@@ -14,6 +14,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="108dp"
         android:text="would you like to view analytics or sign in members"
+        android:textColor="@android:color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />

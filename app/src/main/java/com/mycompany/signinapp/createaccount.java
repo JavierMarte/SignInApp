@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +17,11 @@ public class createaccount extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.createaccount);
+
+        TextView  club = (TextView) findViewById(R.id.textView9);
+        String sessionId = getIntent().getStringExtra("EXTRA_SESSION_ID");
+        club.setText(sessionId);
+        System.out.println(sessionId);
     }
 
     EditText username;
@@ -35,6 +41,13 @@ public class createaccount extends AppCompatActivity {
 
         Firebase myFirebaseRef = new Firebase("https://signinapp-50107.firebaseio.com/");
 
+
+
+        /*
+
+
+        get intent info here
+         */
 
 //check usernames before finalzing to ensure no repeat users
         myFirebaseRef.child("usernames").child(username.getText().toString()).child("club").setValue("computer science club");

@@ -34,28 +34,56 @@ public class registerproceed extends AppCompatActivity {
         Firebase myFirebaseRef = new Firebase("https://signinapp-50107.firebaseio.com/");
 
 
-
+        System.out.println("in here");
         String val = "true";
 
         myFirebaseRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                System.out.println(dataSnapshot.child("OneTimeCodes").child("12304").getValue());
-                System.out.println("[" + dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue() + "]");
-                System.out.println("[" + dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue() + "]");
-                System.out.println((dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue()).toString().equals("true"));
+                //System.out.println(dataSnapshot.child("OneTimeCodes").child("12304").getValue());
+              //  System.out.println("[" + dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue() + "]");
+              //  System.out.println("[" + dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue() + "]");
+              //  System.out.println((dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue()).toString().equals("true"));
 
-                if((dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue()).toString().equals("true")){
+                //System.out.println((dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).exists()));
+//change directory
+                //(dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).getValue()).toString().equals("true")
+
+
+
+
+                if((dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).exists())){
 
                     System.out.println("in here");
+
+                    try {
+                        System.out.println(dataSnapshot.child("OneTimeCodes").exists());
+                        System.out.println(dataSnapshot.child("OneTimeCodes").child("12304").exists());
+                        System.out.println(dataSnapshot.child("OneTimeCodes").child("12304").child("clubname").exists());
+                        System.out.println(dataSnapshot.child("OneTimeCodes").child("12304").child("clubname").getValue().toString());
+
+                    }catch(Exception e){
+
+                        e.printStackTrace();
+                    }
+                     //System.out.println(dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).child("clubname").getValue().toString());
+
+
                     //go to anal and signin
                     //if exec status go to anal and signin
                    // Intent i = new Intent(this, analytics_signin.class);
                     //startActivity(i);
 
                     Toast.makeText(getApplicationContext(),"succesful!!!", Toast.LENGTH_SHORT).show();
+
                     Intent i = new Intent(registerproceed.this, createaccount.class);
+
+                    //Intent intent = new Intent(getBaseContext(), SignoutActivity.class);
+                    //enter info here
+                    i.putExtra("EXTRA_SESSION_ID", dataSnapshot.child("OneTimeCodes").child(password.getText().toString()).child("clubname").getValue().toString());
+                    //startActivity(intent);
+
                     startActivity(i);
 
 
@@ -67,6 +95,8 @@ public class registerproceed extends AppCompatActivity {
 
             @Override
             public void onCancelled(FirebaseError firebaseError) {
+
+                System.out.println(firebaseError.getMessage());
 
                 Toast.makeText(getApplicationContext(),"error uploading to server!!", Toast.LENGTH_SHORT).show();
 
