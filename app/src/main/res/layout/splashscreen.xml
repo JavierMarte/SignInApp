@@ -66,16 +66,15 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="0dp" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginBottom="112dp"
-        android:text="Clubo"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="165dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="40dp"
+        android:src="@mipmap/clubo2"
         app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
