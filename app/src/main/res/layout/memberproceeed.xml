@@ -9,11 +9,11 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_width="161dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="116dp"
         android:layout_marginTop="112dp"
-        android:text="what club are you apart of?"
+        android:text="What clubs are you in?"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -47,7 +47,7 @@
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="clubsnames" />
+                android:text="Clubs" />
         </LinearLayout>
     </ScrollView>
 
