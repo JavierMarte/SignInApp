@@ -40,6 +40,7 @@ public class login extends AppCompatActivity {
 
 
         password = (EditText) findViewById(R.id.editText8);
+
         username = (EditText) findViewById(R.id.editText12);
        // cellphone = (EditText) findViewById(R.id.editcellphone);
        // schoolemail = (EditText) findViewById(R.id.editschoolemail);
@@ -123,29 +124,6 @@ public class login extends AppCompatActivity {
 
 
         }
-//
-//        myFirebaseRef.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                System.out.println(dataSnapshot.getValue());
-//                schoolemail.getText().clear();
-//                name.getText().clear();
-//                studentid.getText().clear();
-//                cellphone.getText().clear();
-//                Toast.makeText(getApplicationContext(),"uploaded to server!!", Toast.LENGTH_SHORT).show();
-//
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(FirebaseError firebaseError) {
-//
-//                Toast.makeText(getApplicationContext(),"error uploading to server!!", Toast.LENGTH_SHORT).show();
-//
-//            }
-//
-//
-//        });
 
 
 

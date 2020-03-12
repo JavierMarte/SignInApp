@@ -27,7 +27,7 @@ public class analytics_signin extends AppCompatActivity {
 
     public void analytics(View view) {
 
-//anayltics
+        //anayltics
         Intent intent = new Intent(this, analytics.class);
 
         startActivity(intent);
