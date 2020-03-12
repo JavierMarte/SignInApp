@@ -64,8 +64,10 @@ public class login extends AppCompatActivity {
                     if(dataSnapshot.child("usernames").child(username.getText().toString()).child("status").getValue().toString().equals("member")){
 
                             //if member go to member screen
+                        String tag = dataSnapshot.child("usernames").child(username.getText().toString()).child("club").getValue().toString();
 
                         Intent i = new Intent(login.this, memberscreen.class);
+                        i.putExtra("clubSelection", tag);
                         startActivity(i);
 
                     }else if(dataSnapshot.child("usernames").child(username.getText().toString()).child("status").getValue().toString().equals("Executive")){
