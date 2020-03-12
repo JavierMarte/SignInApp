@@ -11,9 +11,9 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="136dp"
-        android:text=" please enter one time code"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="144dp"
+        android:text="Enter one time code"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="292dp"
-        android:text="code"
+        android:text="Code"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,10 +57,10 @@
         android:id="@+id/approvalbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="412dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="424dp"
         android:onClick="onetime"
-        android:text="enter one time code"
+        android:text="Proceed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

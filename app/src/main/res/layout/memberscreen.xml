@@ -11,9 +11,9 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="108dp"
-        android:text="qr code"
+        android:text="QR Code"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -36,9 +36,9 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
+        android:layout_marginStart="172dp"
         android:layout_marginTop="196dp"
-        android:text="club name"
+        android:text="Club Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,8 +57,8 @@
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="268dp"
         android:onClick="exec"
         android:text="exec"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,9 +68,9 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="256dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteX="141dp"
         tools:srcCompat="@tools:sample/avatars" />
 
 
