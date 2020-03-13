@@ -34,8 +34,8 @@ public class registeractivity extends AppCompatActivity {
 //        Firebase myFirebaseRef = new Firebase("https://signinapp-50107.firebaseio.com/");
 //
 //
-        password = (EditText) findViewById(R.id.editText12);
-        username = (EditText) findViewById(R.id.editText12);
+        password = (EditText) findViewById(R.id.password);
+        username = (EditText) findViewById(R.id.password);
        // cellphone = (EditText) findViewById(R.id.editcellphone);
        // schoolemail = (EditText) findViewById(R.id.editschoolemail);
 

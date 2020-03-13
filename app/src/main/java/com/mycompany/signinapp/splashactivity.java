@@ -74,6 +74,11 @@ public class splashactivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, mainoption.class);
 
+       // Intent intent = new Intent(this, temp.class);
+
+
+
+
         //EditText editText = (EditText) findViewById(R.id.editText);
         //String message = editText.getText().toString();
         //intent.putExtra(EXTRA_MESSAGE, message);

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/backgroundcolors"
-    tools:context=".login">
+    tools:context=".temp">
 
     <LinearLayout
         android:layout_width="363dp"
@@ -45,16 +45,6 @@
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/button"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:capitalize="none"
-            android:text="Forgot password?"
-            android:textAllCaps="false"
-            android:textColor="@color/colorPrimaryDark" />
-
-        <Button
             android:id="@+id/signinbutton"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
@@ -62,31 +52,9 @@
             android:onClick="proceed"
             android:text="Sign in" />
 
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="139dp"
-            android:layout_height="45dp"
-            android:text="Remember me" />
-
         <TableRow
             android:layout_width="301dp"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Don't have an account?" />
-
-            <Button
-                android:id="@+id/button4"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="154dp"
-                android:layout_height="wrap_content"
-                android:text="Create one"
-
-                android:textColor="@color/colorPrimaryDark" />
-        </TableRow>
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
