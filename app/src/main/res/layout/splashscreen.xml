@@ -43,7 +43,7 @@
         android:layout_marginTop="314dp"
         android:layout_marginEnd="136dp"
         android:layout_marginBottom="376dp"
-        android:text="SignInApp"
+        android:text="clubo"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/videoView"
