@@ -70,11 +70,12 @@ public class login extends AppCompatActivity {
                             Log.d(TAG, user.getUid());
                             Log.d(TAG, user.getEmail());
 
-                            mFirebaseDatabase = FirebaseDatabase.getInstance().getReference("usernames");
+                            mFirebaseDatabase = FirebaseDatabase.getInstance().getReference("usernames").child(user.getUid());
+                            Log.d(TAG, mFirebaseDatabase.toString());
+                            Log.d(TAG, "before memberexec");
 
-
-                            memberorexec(mFirebaseDatabase);
-
+                            memberorexec(mFirebaseDatabase, user.getUid());
+                            Log.d(TAG, "after memberexec");
 
 
                             //updateUI(user);
@@ -99,9 +100,9 @@ public class login extends AppCompatActivity {
     }
 
 
-    public void memberorexec(DatabaseReference auth) {
+    public void memberorexec(DatabaseReference auth, final String uid) {
 
-
+        Log.d(TAG, "before auth.addListenerForSingleValueEvent");
         auth.addListenerForSingleValueEvent(new com.google.firebase.database.ValueEventListener() {
             @Override
             public void onDataChange(@NonNull com.google.firebase.database.DataSnapshot dataSnapshot) {
@@ -110,7 +111,7 @@ public class login extends AppCompatActivity {
 
                 System.out.println(userwithoutdot);
 
-
+                Log.d(TAG, "before auth.addListenerForSingleValueEvent");
                 if(dataSnapshot.child(userwithoutdot).exists()){
 
                     System.out.println("in here");

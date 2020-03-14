@@ -35,7 +35,7 @@ public class memberorproceed extends AppCompatActivity {
         setContentView(R.layout.memberproceeed);
         Firebase.setAndroidContext(this);
 
-        myFirebaseRef = new Firebase("https://signinapp-50107.firebaseio.com/");
+        myFirebaseRef = new Firebase("https://signinapp-50107.firebaseio.com/clubs");
 
         //Intent intent = getIntent();
 
@@ -50,14 +50,14 @@ public class memberorproceed extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 //dataSnapshot.child("clubs").getChildrenCount();
-
+//dataSnapshot.child("clubs").getChildrenCount()
                 System.out.println("clubs->");
-                System.out.println(dataSnapshot.child("clubs").getChildrenCount());
+                System.out.println(dataSnapshot.getChildrenCount());
 
-                size = (int) dataSnapshot.child("clubs").getChildrenCount();
+                size = (int) dataSnapshot.getChildrenCount();
 
-                list = dataSnapshot.child("clubs").getChildren();
-                for (DataSnapshot snapshot : dataSnapshot.child("clubs").getChildren()) {
+                list = dataSnapshot.getChildren();
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     //User user = snapshot.getValue(User.class);
                     System.out.println(snapshot.getKey());
                 }
