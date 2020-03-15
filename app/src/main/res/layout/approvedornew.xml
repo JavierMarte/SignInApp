@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/backgroundcolors"
     tools:context=".approvedornew">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="108dp"
         android:text="Have you been approved or  want create a new club"
+        android:textColor="@android:color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />

@@ -14,6 +14,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="112dp"
         android:text="what club are you apart of?"
+        android:textColor="@android:color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
